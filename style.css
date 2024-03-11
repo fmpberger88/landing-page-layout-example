@@ -92,6 +92,7 @@ footer p {
 
 .blog-item p {
     text-align: center;
+    font-size: 1.125rem;
 }
 
 .inspiring-quote {
@@ -130,6 +131,14 @@ footer p {
     border-radius: 20px;
 }
 
+.call-to-action h4 {
+    font-size: 1.5rem;
+}
+
+.call-to-action p {
+    font-size: 1.125rem;
+}
+
 .action-card {
     color: #F9FAF8;
 }
@@ -141,6 +150,7 @@ footer p {
     padding: 5px 15px;
     margin-top: 15px;
     color: #F9FAF8;
+    font-size: 1.125rem;
 }
 
 #header-logo {
@@ -155,6 +165,7 @@ footer p {
     padding: 5px 15px;
     margin-top: 15px;
     color: #F9FAF8;
+    font-size: 1.125rem;
 }
 
 #header-info {
@@ -234,6 +245,7 @@ footer p {
     main h3 {
         text-align: center;
     }
+
 
     .blog-item {
         margin-bottom: 30px;
