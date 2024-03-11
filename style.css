@@ -1,0 +1,153 @@
+:root {
+    --layout: 50px 200px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: #1F2937;
+    color: white;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+    padding: var(--layout);
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+}
+
+header nav ul a {
+    color: #F9FAF8;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px
+}
+
+main h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+main img {
+    border: 3px #3882F6 solid;
+    border-radius: 15px;
+}
+
+aside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1F2937;
+}
+
+footer p {
+    color: #F9FAF8;
+}
+
+.blogs {
+    display: flex;
+}
+
+.blog-item {
+
+}
+
+.inspiring-quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E7EB;
+}
+
+.quote {
+    width: 50%;
+    padding: 70px 50px 0 50px;
+    font-size: 2.25rem;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.author {
+    width: 50%;
+    padding: 20px 50px 70px 50px;
+    text-align: right;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #1F2937;
+}
+
+
+.call-to-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--layout);
+}
+
+.action-card {
+    background-color: #3882F6;
+}
+
+.action-button {
+    background-color: #3882F6;
+}
+
+#header-logo {
+    font-size: 2rem;
+    color: #F9FAF8;
+}
+
+#header-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--layout);
+}
+
+#header-info h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #F9FAF8
+}
+
+#header-info p {
+    font-size: 1.125rem;
+    color: #E5E7EB;
+}
+
+#header-image {
+    background-color: #E5E7EB;
+}
+ 
