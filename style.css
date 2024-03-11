@@ -1,6 +1,3 @@
-:root {
-    --layout: 50px 200px;
-}
 
 * {
     box-sizing: border-box;
@@ -11,7 +8,6 @@
 
 
 header {
-    padding: 40px;
     display: flex;
     flex-direction: column;
     background-color: #1F2937;
@@ -19,12 +15,14 @@ header {
 }
 
 header nav {
+    padding: 40px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 100px;
-    padding: var(--layout);
+    flex-wrap: wrap;
+    width: 60%;
+    margin: 0 auto;
 }
 
 header nav ul {
@@ -36,6 +34,7 @@ header nav ul {
 header nav ul a {
     color: #F9FAF8;
     text-decoration: none;
+    font-size: 1.5rem;
 }
 
 main {
@@ -43,7 +42,9 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px
+    padding: 50px;
+    width: 70%;
+    margin: 0 auto;
 }
 
 main h3 {
@@ -77,10 +78,20 @@ footer p {
 
 .blogs {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .blog-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
 
+.blog-item p {
+    text-align: center;
 }
 
 .inspiring-quote {
@@ -113,15 +124,23 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: var(--layout);
+    margin: 40px;
+    padding: 30px;
+    background-color: #3882F6;
+    border-radius: 20px;
 }
 
 .action-card {
-    background-color: #3882F6;
+    color: #F9FAF8;
 }
 
 .action-button {
     background-color: #3882F6;
+    border: 1px #F9FAF8 solid;
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin-top: 15px;
+    color: #F9FAF8;
 }
 
 #header-logo {
@@ -129,14 +148,30 @@ footer p {
     color: #F9FAF8;
 }
 
-#header-info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: var(--layout);
+#header-button {
+    background-color: #3882F6;
+    border: 1px #3882F6 solid;
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin-top: 15px;
+    color: #F9FAF8;
 }
 
-#header-info h1 {
+#header-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+#header-info > div {
+    flex: 1;
+}
+
+#header-info h2 {
     font-size: 3rem;
     font-weight: bold;
     color: #F9FAF8
@@ -145,9 +180,80 @@ footer p {
 #header-info p {
     font-size: 1.125rem;
     color: #E5E7EB;
+    margin-right: 30px;
+    line-height: 1.6rem;
 }
 
 #header-image {
-    background-color: #E5E7EB;
+    width: 100%;
+    height: auto;
+    background-color: #1F2937;
+    padding: 50px;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 480px) {
+    #header-logo {
+        margin-bottom: 20px;
+    }
+
+    header nav {
+        width: 80%;
+    }
+
+    #header-info {
+        width: 80%;
+    }
+
+    #header-info > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #header-info h2 {
+        margin-bottom: 40px;
+    }
+
+    #header-info p {
+        font-size: 1.5rem;
+    }
+
+    #header-button {
+        margin-top: 50px;
+        padding: 15px 30px;
+        font-size: 1.5rem;
+        color: #F9FAF8;
+        width: 150px;
+        align-self: center;
+    }
+
+    #header-info > div:nth-child(2) {
+        display: none;
+    }
+
+    main h3 {
+        text-align: center;
+    }
+
+    .blog-item {
+        margin-bottom: 30px;
+    }
+
+    .quote {
+        width: 80%;
+        font-size: 1.5rem;
+    }
+
+    .author {
+        font-size: 1.5rem;
+    }
+
+    .call-to-action {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
 }
  
